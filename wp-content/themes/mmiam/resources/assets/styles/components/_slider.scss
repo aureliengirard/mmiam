@@ -1,0 +1,44 @@
+.slick {
+  .slick-dots {
+    width: 30px;
+    position: absolute;
+    right: $spacer;
+    bottom: calc(50% - 90px);
+    display: inline-block;
+
+    li {
+      display: block;
+      margin: 10px 5px;
+
+      button {
+        &::before {
+          content: "";
+          width: 20px;
+          height: 20px;
+          background-color: $white;
+          border: solid 2px $brand-1;
+          border-radius: 50%;
+          opacity: 1;
+        }
+      }
+
+      &.slick-active {
+        button {
+          &::before {
+            background-color: $brand-1;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-vertical .slick-slide {
+  border: none;
+  height: calc(100vh - 90px);
+}

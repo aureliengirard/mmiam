@@ -1,0 +1,95 @@
+.mobile-nav {
+  width: 100%;
+
+  @include media-breakpoint-up(xxxl) {
+    display: none;
+  }
+
+  &__menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: $spacer;
+
+    .nav-item {
+      border-top: solid 1px $white;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-right: 0.5rem;
+
+      &:first-child {
+        border: none;
+      }
+
+      .nav-link {
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 1.5rem;
+        line-height: 1;
+        color: $white;
+        text-transform: lowercase;
+        padding-left: 0;
+        padding-right: 0;
+
+        &:hover,
+        &:focus {
+          color: $body-color;
+        }
+
+        &.dropdown-toggle {
+          display: flex;
+          justify-content: space-between;
+
+          &::after {
+            content: "+";
+            font-weight: 400;
+            font-style: normal;
+            border: none;
+          }
+        }
+      }
+
+      &.show .nav-link {
+        &::after {
+          content: "\2013";
+        }
+      }
+
+      &.active .nav-link {
+        text-decoration: underline;
+      }
+    }
+
+    .dropdown-menu {
+      position: relative;
+      float: none;
+      background-color: transparent;
+      width: 100%;
+      height: auto;
+      border: none;
+
+      .nav-item {
+        border: none;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+
+        .nav-link {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 1rem;
+          line-height: 1;
+          font-weight: 700;
+          font-style: normal;
+          text-transform: uppercase;
+          letter-spacing: 0.05rem;
+
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

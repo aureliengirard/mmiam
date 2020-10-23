@@ -1,0 +1,75 @@
+.primary-subnav {
+  display: none;
+  background-color: $brand-3;
+
+  @include media-breakpoint-up(xl) {
+    display: block;
+    top: 90px;
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(xxxl) {
+    top: 106px;
+  }
+
+  &__menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: $navbar-dropdown-menu-height;
+    height: $navbar-dropdown-menu-height;
+    margin-top: 0;
+
+    @include media-breakpoint-up(xxxl) {
+      height: 52px;
+    }
+
+    .nav-item {
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 2px;
+        height: 16px;
+        background-color: $white;
+        position: absolute;
+        left: 0;
+        top: calc(50% - 2px);
+        transform: translateY(-50%);
+      }
+
+      &:first-child {
+        &::before {
+          display: none;
+        }
+      }
+
+      .nav-link {
+        font-family: $headings-font-family;
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+        color: $white;
+
+        &:hover,
+        &:focus {
+          color: $navbar-dark-hover-color;
+        }
+
+        &::before {
+          display: none;
+        }
+
+        @include media-breakpoint-up(xxxl) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+// Slick Carousel font path
+$slick-font-path: "~slick-carousel/slick/fonts/";
+
+// Slick Carousel ajax-loader.gif path
+$slick-loader-path: "~slick-carousel/slick/";
+
+$theme-colors: (
+  primary: #ff7435,
+  secondary: #831645,
+);
+
+// add two breakpoints for largers screen xxl and xxxl - do not change that - overwrite Bootstrap variables
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1300px,
+  xxxl: 1500px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1240px,
+  xxxl: 1440px
+) !default;
+
+$enable-caret: true;
+
+$spacer: 1rem;
+
+$brand-1: #ff7435; // orange
+$brand-2: #831645; // purple
+$brand-3: #4d4d4f; // dark-gray
+$brand-4: #f26c4e; // salmon
+$brand-5: #ee4d00; // burnt orange
+$white: #fff;
+$black: #000;
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+$body-bg: #fff;
+$body-color: #4d4d4f;
+
+$link-color: #ff7435;
+$link-hover-color: #4d4d4f;
+
+$border-radius: 0;
+$border-width: 3px;
+
+$font-family-sans-serif: "Lato", sans-serif;
+
+$headings-font-family: "Josefin Sans", sans-serif;
+$headings-font-weight: 700;
+$headings-line-height: 1.2;
+
+$btn-font-weight: 900;
+
+$input-placeholder-color: #4d4d4f;
+
+$navbar-toggler-border-radius: 0;
+
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: rgba($white, 0.7);
+$navbar-dark-active-color: $white;
+
+$navbar-padding-y: $spacer / 2;
+$navbar-padding-x: $spacer;
+$navbar-height: 74px;
+$navbar-dropdown-menu-height: 44px;
+
+$burger-size: 40px;
+$burger-height: 20px;
+$burger-width: 30px;
+$burger-background-color: transparent;
+$burger-line-size: 3px;
+$burger-line-color: #fff;
+$burger-line-radius: $burger-line-size;
+$to-translate: ($burger-height - $burger-line-size) / 2;
+
+$icomoon-font-family: "mmiam" !default;
+$icomoon-font-path: "../fonts" !default;
+
+$icon-calendar: "\e90f";
+$icon-alert: "\e900";
+$icon-binoculars: "\e901";
+$icon-collapse: "\e902";
+$icon-earth: "\e903";
+$icon-facebook: "\e904";
+$icon-instagram: "\e905";
+$icon-linkedin: "\e906";
+$icon-loop: "\e907";
+$icon-mailbox: "\e908";
+$icon-pencil: "\e909";
+$icon-play: "\e90a";
+$icon-star: "\e90b";
+$icon-stop-sign: "\e90c";
+$icon-twitter: "\e90d";
+$icon-youtube: "\e90e";
+$icon-music: "\e910";
+$icon-university: "\e911";
+$icon-us: "\e912";
+$icon-maple: "\e913";
+
+$placeholder-color: #d4d4d4;
+$input-color: #4d4d4f;
+$input-border-color: #ff7435;
+$input-border-radius: 0;
+$input-border-radius-lg: 0;
+
+$btn-border-radius: 0;
+$btn-border-radius-lg: 0;
+$btn-border-radius-sm: 0;

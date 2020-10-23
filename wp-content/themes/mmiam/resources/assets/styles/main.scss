@@ -1,0 +1,47 @@
+@import "common/variables";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+// @import "~some-node-module";
+@import "~ekko-lightbox/dist/ekko-lightbox.css";
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";
+
+/** Import theme styles */
+@import "common/global";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/wp-classes";
+@import "components/burger";
+@import "components/tables";
+@import "components/videos";
+@import "components/tooltip";
+@import "components/slider";
+@import "components/ekko-lightbox";
+@import "components/modal";
+@import "components/widget-categories";
+@import "components/widget-recent-entries";
+@import "layouts/header";
+@import "layouts/subnav";
+@import "layouts/mobile-nav";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+@import "layouts/content-generic";
+@import "layouts/single-course";
+@import "layouts/admission-process";
+@import "layouts/program";
+@import "layouts/program2";
+@import "layouts/home";
+@import "layouts/home2";
+@import "layouts/search";

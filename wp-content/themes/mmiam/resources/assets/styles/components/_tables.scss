@@ -1,0 +1,255 @@
+/*
+.table-responsive {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+*/
+
+.tablepress {
+  margin-top: 1rem;
+
+  thead {
+    th {
+      background-color: $brand-2;
+      color: #fff;
+      font-family: $headings-font-family;
+      font-weight: 500;
+      letter-spacing: 0.03rem;
+      text-transform: uppercase;
+      text-align: center;
+      border-left: solid 2px $white;
+      border-bottom: 0;
+    }
+  }
+
+  tbody {
+    td {
+      text-align: center;
+      vertical-align: middle;
+      border-bottom: solid 2px $brand-1;
+
+      &:nth-child(4) {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.tablepress-table-description {
+  font-size: 0.875rem;
+}
+
+.tablepress-table-name {
+  font-family: $font-family-sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1rem;
+
+  @include media-breakpoint-up(xxl) {
+    font-size: 1.5rem;
+  }
+}
+
+#tablepress-2 {
+  font-size: 1.25rem;
+
+  @include media-breakpoint-up(xxl) {
+    font-size: 1.5rem;
+  }
+
+  thead {
+    th {
+      &:nth-child(1) {
+        border-left: none;
+        min-width: 150px;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        min-width: 200px;
+      }
+
+      &:nth-child(4) {
+        min-width: 500px;
+      }
+    }
+  }
+}
+
+#tablepress-1 {
+  font-size: 1.25rem;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 9rem;
+    font-size: 1.5rem;
+
+    &::before {
+      content: "";
+      width: calc(100% - 10px);
+      height: 3px;
+      display: block;
+      background-color: $brand-1;
+      position: absolute;
+      bottom: 195px;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      width: 3px;
+      height: 230px;
+      display: block;
+      background-color: $brand-1;
+      position: absolute;
+      right: 10px;
+      bottom: -2rem;
+    }
+  }
+
+  .tooltip-note-25,
+  .tooltip-note-24,
+  .tooltip-note-23 {
+    display: inline-block;
+
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  .note-25,
+  .note-24,
+  .note-23 {
+    display: none;
+    position: absolute;
+    text-transform: uppercase;
+    color: $brand-2;
+    bottom: 2rem;
+    width: 165px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.25;
+
+    @media (min-width: 1440px) {
+      display: block;
+    }
+  }
+
+  .note-23 {
+    left: 1260px;
+    text-align: left;
+    padding-left: 10px;
+
+    &::before {
+      content: "";
+      width: 50px;
+      height: 3px;
+      background-color: $brand-1;
+      position: absolute;
+      left: -50px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      content: "";
+      width: 3px;
+      height: 60px;
+      background-color: $brand-1;
+      position: absolute;
+      left: -50px;
+      bottom: 50%;
+    }
+  }
+
+  .note-24 {
+    width: 200px;
+    left: 975px;
+
+    &::before {
+      content: "";
+      width: 3px;
+      height: 40px;
+      background-color: $brand-1;
+      position: absolute;
+      left: 50%;
+      bottom: calc(100% + 4px);
+    }
+  }
+
+  .note-25 {
+    left: 730px;
+    line-height: 1.25;
+    text-align: left;
+
+    &::before {
+      content: "";
+      width: 50px;
+      height: 3px;
+      background-color: $brand-1;
+      position: absolute;
+      right: -50px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      content: "";
+      width: 3px;
+      height: 60px;
+      background-color: $brand-1;
+      position: absolute;
+      right: -50px;
+      bottom: 50%;
+    }
+  }
+
+  .row-1,
+  .row-2 {
+    background-color: $brand-2;
+    color: $white;
+
+    td {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      min-width: 130px;
+      border-right: solid 5px $white;
+      text-align: center;
+      border-bottom: none;
+    }
+
+    .column-1 {
+      background-color: #d2d2d2;
+      font-family: $headings-font-family;
+      font-weight: 700;
+      letter-spacing: 0.03rem;
+      color: $black;
+      text-transform: uppercase;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      min-width: 330px;
+      border-right: none;
+    }
+  }
+}
+
+.tablepress-table-description-id-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.25rem;
+
+  @extend .col-lg-11;
+  @extend .col-md-12;
+
+  @include media-breakpoint-up(lg) {
+    column-count: 2;
+    column-gap: 2rem;
+    column-span: all;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    font-size: 1.5rem;
+  }
+}

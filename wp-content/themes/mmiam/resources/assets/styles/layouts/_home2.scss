@@ -1,0 +1,168 @@
+.section-home-7 {
+  .section-home {
+    &__row {
+      @include media-breakpoint-up(lg) {
+        height: calc(100vh - 90px);
+      }
+    }
+
+    &__left {
+      @include media-breakpoint-down(lg) {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+      }
+    }
+  }
+
+  .school-logo {
+    width: 290px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  .school-rankings {
+    &__list {
+      width: 100%;
+      max-width: 470px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include media-breakpoint-down(sm) {
+        max-width: 300px;
+      }
+    }
+
+    &__item {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: $white;
+      text-align: right;
+      margin-top: 3rem;
+      justify-content: center;
+
+      @include media-breakpoint-down(sm) {
+        justify-content: flex-end;
+      }
+
+      &:first-child {
+        @include media-breakpoint-up(md) {
+          justify-content: flex-start;
+        }
+      }
+
+      &:nth-of-type(2) {
+        position: relative;
+
+        @include media-breakpoint-up(md) {
+          justify-content: flex-end;
+
+          &::before {
+            content: "";
+            width: 230px;
+            height: 3px;
+            background-color: $white;
+            display: block;
+            transform: rotate(25deg);
+            position: absolute;
+            right: 20px;
+            top: -27px;
+          }
+
+          &::after {
+            content: "";
+            width: 155px;
+            height: 3px;
+            background-color: $white;
+            display: block;
+            transform: rotate(-40deg);
+            position: absolute;
+            right: 0;
+            bottom: -10px;
+            z-index: 1;
+          }
+        }
+      }
+
+      &:nth-of-type(3) {
+        @include media-breakpoint-up(md) {
+          justify-content: center;
+        }
+      }
+    }
+
+    &__icon {
+      margin-left: 1.5rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      min-width: 60px;
+      border: solid 5px $brand-2;
+      border-radius: 50%;
+      color: $brand-2;
+      background-color: $white;
+      overflow: hidden;
+      position: relative;
+      z-index: 2;
+
+      &.icon-us {
+        &::before {
+          font-size: 3rem;
+        }
+      }
+
+      &.icon-university {
+        &::before {
+          font-size: 1.5rem;
+        }
+      }
+
+      &::before {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .section-content-top {
+    font-family: $headings-font-family;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: $white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    @include media-breakpoint-up(lg) {
+      padding-left: 2rem;
+      padding-right: 1rem;
+    }
+  }
+
+  .content-top {
+    min-height: 250px;
+
+    @include media-breakpoint-up(lg) {
+      height: 50vh;
+    }
+  }
+
+  .call-to-action__wrapper {
+    @include media-breakpoint-up(lg) {
+      height: calc(50vh - 90px);
+    }
+  }
+
+  .content-block__call-to-action .wysiwyg a::after {
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -42px;
+  }
+}

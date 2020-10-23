@@ -1,0 +1,55 @@
+[data-toggle="tooltip"] {
+  background-color: $brand-1;
+  color: $white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  font-size: 0.8rem;
+  position: relative;
+  top: -10px;
+  font-weight: 400;
+  padding: 0;
+  line-height: 1;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+.tooltip {
+  &.show {
+    opacity: 1;
+  }
+
+  .tooltip-inner {
+    background-color: $brand-3;
+    max-width: 500px;
+    text-align: left;
+
+    p {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+
+      &:first-child {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .arrow {
+    &::before {
+      border-bottom-color: $brand-3;
+    }
+  }
+
+  &[x-placement="top"] {
+    .arrow {
+      &::before {
+        border-top-color: $brand-3;
+      }
+    }
+  }
+}

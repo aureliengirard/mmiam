@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "#{$icomoon-font-family}";
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?mxez0v");
+  src:
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?mxez0v#iefix") format("embedded-opentype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?mxez0v") format("truetype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?mxez0v") format("woff"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?mxez0v##{$icomoon-font-family}") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon,
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "#{$icomoon-font-family}" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calendar {
+  &::before {
+    content: $icon-calendar;
+  }
+}
+
+.icon-alert {
+  &::before {
+    content: $icon-alert;
+  }
+}
+
+.icon-binoculars {
+  &::before {
+    content: $icon-binoculars;
+  }
+}
+
+.icon-collapse {
+  &::before {
+    content: $icon-collapse;
+  }
+}
+
+.icon-earth {
+  &::before {
+    content: $icon-earth;
+  }
+}
+
+.icon-facebook {
+  &::before {
+    content: $icon-facebook;
+  }
+}
+
+.icon-instagram {
+  &::before {
+    content: $icon-instagram;
+  }
+}
+
+.icon-linkedin {
+  &::before {
+    content: $icon-linkedin;
+  }
+}
+
+.icon-loop {
+  &::before {
+    content: $icon-loop;
+  }
+}
+
+.icon-mailbox {
+  &::before {
+    content: $icon-mailbox;
+  }
+}
+
+.icon-pencil {
+  &::before {
+    content: $icon-pencil;
+  }
+}
+
+.icon-play {
+  &::before {
+    content: $icon-play;
+  }
+}
+
+.icon-star {
+  &::before {
+    content: $icon-star;
+  }
+}
+
+.icon-stop-sign {
+  &::before {
+    content: $icon-stop-sign;
+  }
+}
+
+.icon-twitter {
+  &::before {
+    content: $icon-twitter;
+  }
+}
+
+.icon-youtube {
+  &::before {
+    content: $icon-youtube;
+  }
+}
+
+.icon-music {
+  &::before {
+    content: $icon-music;
+  }
+}
+
+.icon-university {
+  &::before {
+    content: $icon-university;
+  }
+}
+
+.icon-us {
+  &::before {
+    content: $icon-us;
+  }
+}
+
+.icon-maple {
+  &::before {
+    content: $icon-maple;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  letter-spacing: 0.2rem;
+}
+
+h1,
+.h1 {
+  font-size: 2rem;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 2.5rem;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    font-size: 3.375rem;
+  }
+}
+
+section {
+  overflow-x: hidden;
+}
+
+.no-bullet {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    margin-top: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+a {
+  &:focus {
+    outline: none;
+  }
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.bg-brand-1 {
+  background-color: $brand-1;
+}
+
+.bg-brand-2 {
+  background-color: $brand-2;
+}
