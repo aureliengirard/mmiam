@@ -660,6 +660,7 @@
     &.international {
       @include media-breakpoint-down(xs) {
         min-height: 550px !important;
+        background-position-x: 3%;
       }
     }
 
