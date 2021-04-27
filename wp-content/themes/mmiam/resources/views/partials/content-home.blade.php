@@ -65,7 +65,7 @@
 						<h2 class="square__title square__box-title-4">{!! $home_section2->box_4_title !!}</h2>
 						@endif
 					</div>
-				</div>				
+				</div>
 			</div>
 		</div>
 	</div>
@@ -94,7 +94,7 @@
 				<div class="row h-100">
 					<div class="col-12 rectangle__cell px-0">
 						@if($home_section3->cta_content)
-						<div class="d-flex align-items-center content-block__call-to-action">	
+						<div class="d-flex align-items-center content-block__call-to-action">
 							<div class="wysiwyg">
 								{!! $home_section3->cta_content !!}
 							</div>
@@ -129,9 +129,9 @@
 
 					@if($home_section4->graduates_intro_bg)
 					<div class="col-12 graduates-intro background-img rectangle__cell d-flex align-items-center justify-content-center" style="background-image:url({{ esc_url($home_section4->graduates_intro_bg) }}">
-					@else				
+					@else
 					<div class="col-12 bg-brand-1 graduates-intro rectangle__cell d-flex align-items-center justify-content-center">
-					@endif	
+					@endif
 						@if($home_section4->graduates_intro)
 						<p>{!! $home_section4->graduates_intro !!}</p>
 						@endif
@@ -163,14 +163,14 @@
 
 			<div class="col-12 px-0 call-to-action__wrapper">
 				@if($home_section5->cta_content)
-				<div class="d-flex align-items-center content-block__call-to-action">		
+				<div class="d-flex align-items-center content-block__call-to-action">
 					<div class="wysiwyg">
 						{!! $home_section5->cta_content !!}
 					</div>
 				</div>
 				@endif
 			</div>
-		</div>		
+		</div>
 	</div>
 </section>
 
@@ -300,7 +300,7 @@
 						<p class="directors-intro mb-0">{!! $home_section8->directors_intro !!}</p>
 						@endif
 					</div>
-					
+
 					<div class="col-12 rectangle__cell directors-list__wrapper d-flex">
 						@if($home_section8_directors_list)
 							<ul class="no-bullet directors-list d-flex flex-column align-items-center">

@@ -43,7 +43,7 @@
 						{{ $admission_process->subsection_2_title }}
 					</h2>
 					@endif
-					
+
 					@if($admission_process->subsection_2_content)
 					<div class="applying-bloc__content">
 						<div class="wysiwyg">
@@ -59,7 +59,7 @@
 </section>
 
 <section class="section section-applying-bloc section-application-process">
-	<div class="container-fluid">		
+	<div class="container-fluid">
 		@if($application_process->main_title)
 		<div class="row justify-content-center">
 			<div class="col-lg-6 col-sm-12">
@@ -355,5 +355,5 @@
 		@foreach($admission_faq_bloc as $faq_bloc)
 			@include('partials.admission-faq-bloc-item', $faq_bloc)
 		@endforeach
-	</div>	
+	</div>
 </section>

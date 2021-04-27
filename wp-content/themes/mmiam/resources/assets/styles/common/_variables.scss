@@ -15,15 +15,19 @@ $theme-colors: (
 // add two breakpoints for largers screen xxl and xxxl - do not change that - overwrite Bootstrap variables
 $grid-breakpoints: (
   xs: 0,
+  xsm: 360px,
   sm: 576px,
   md: 768px,
   lg: 992px,
   xl: 1200px,
   xxl: 1300px,
-  xxxl: 1500px
+  xxll: 1440px,
+  xxxl: 1500px,
+  xxxxl: 1600px
 ) !default;
 
 $container-max-widths: (
+  xsm: 360px,
   sm: 540px,
   md: 720px,
   lg: 960px,
@@ -88,7 +92,8 @@ $burger-line-radius: $burger-line-size;
 $to-translate: ($burger-height - $burger-line-size) / 2;
 
 $icomoon-font-family: "mmiam" !default;
-$icomoon-font-path: "../fonts" !default;
+//$icomoon-font-path: "../fonts" !default;
+$icomoon-font-path: "/wp-content/themes/mmiam/resources/assets/fonts/" !default;
 
 $icon-calendar: "\e90f";
 $icon-alert: "\e900";

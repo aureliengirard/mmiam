@@ -3,22 +3,22 @@ import 'ekko-lightbox/dist/ekko-lightbox.js';
 export default {
   init() {
     // JavaScript to be fired on all pages
-    
+
     // Add dropdown-menu actions
     $('.dropdown a.dropdown-toggle').on('click', function() {
       if ( !$(this).next().hasClass('show') ) {
         $(this).parents('.dropdown').first().find('.show').removeClass('show');
       }
-      
+
       var $subMenu = $(this).next('.dropdown-menu');
       $subMenu.toggleClass('show');
-      
+
       $(this).parent('li').toggleClass('show');
 
       $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function () {
         $('.dropdown-menu .show').removeClass('show');
       });
-      
+
       return false;
     });
 
@@ -32,6 +32,7 @@ export default {
 
     // Select all links with hashes
     // https://css-tricks.com/snippets/jquery/smooth-scrolling/
+    /*
     $('a[href*="#"]')
       // Remove links that don't actually link to anything
       .not('[href="#"]')
@@ -39,8 +40,8 @@ export default {
       .click(function(event) {
         // On-page links
         if (
-          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-          && 
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+          &&
           location.hostname == this.hostname
         ) {
           // Figure out element to scroll to
@@ -69,6 +70,7 @@ export default {
           }
         }
       });
+      */
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

@@ -10,7 +10,7 @@
   },
   "publicPath": "/app/themes/mmiam",
   "devUrl": "http://mmiam.test",
-  "proxyUrl": "http://localhost:3000",
+  "proxyUrl": "http://localhost:8080",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
     "app/**/*.php",

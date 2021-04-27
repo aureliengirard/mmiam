@@ -209,3 +209,7 @@ a {
 .bg-brand-2 {
   background-color: $brand-2;
 }
+
+html {
+  scroll-behavior: smooth;
+}
